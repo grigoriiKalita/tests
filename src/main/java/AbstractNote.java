@@ -1,11 +1,11 @@
 abstract public class AbstractNote {
 
-    private final String author;
-    private final String date;
-    private final String message;
-    private final String messageType;
+    private Data author = Data.AUTHOR;
+    private Data date = Data.DATE;
+    private Data message = Data.MESSAGE;
+    private Data messageType = Data.MESSAGETYPE;
 
-    AbstractNote(String author, String date, String message, String messageType){
+    AbstractNote(Data author, Data date, Data message, Data messageType){
         this.author = author;
         this.date = date;
         this.message = message;

@@ -1,9 +1,10 @@
-public class Video extends Media {
+public class Video extends Media implements Runnable {
 
     private Integer numberOfViews;
 
-    Video(String author, String date, String message, String messageType, String mediaType) {
+    Video(Data author, Data date, Data message, Data messageType, String mediaType, Integer numberOfViews) {
         super(author, date, message, messageType, mediaType);
+        this.numberOfViews = numberOfViews;
     }
 
     public void watchVideo() {

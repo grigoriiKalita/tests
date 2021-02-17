@@ -1,8 +1,8 @@
-public class TextNote extends AbstractNote{
+public class TextNote extends AbstractNote implements Printable {
 
     private boolean published;
 
-    TextNote(String author, String date, String message, String messageType, boolean published) {
+    TextNote(Data author, Data date, Data message, Data messageType, boolean published) {
         super(author, date, message, messageType);
         this.published = published;
     }
@@ -23,5 +23,10 @@ public class TextNote extends AbstractNote{
     @Override
     Integer maxMessageSize() {
         return null;
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Text was printed...");
     }
 }
