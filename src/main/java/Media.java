@@ -1,8 +1,8 @@
-public class Media extends AbstractNote implements Runnable {
+public class Media extends AbstractNote {
 
     private final String mediaType;
 
-    Media(Data author, Data date, Data message, Data messageType, String mediaType) {
+    Media(String author, String date, String message, Data messageType, String mediaType) {
         super(author, date, message, messageType);
         this.mediaType = mediaType;
     }
@@ -22,8 +22,4 @@ public class Media extends AbstractNote implements Runnable {
         return null;
     }
 
-    @Override
-    public void runStuff() {
-        System.out.println("Running this media...");
-    }
 }

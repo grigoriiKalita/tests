@@ -2,8 +2,8 @@ public class TextNote extends AbstractNote implements Printable {
 
     private boolean published;
 
-    TextNote(Data author, Data date, Data message, Data messageType, boolean published) {
-        super(author, date, message, messageType);
+    TextNote(String author, String date, String message, Data MESSAGETYPE, boolean published) {
+        super(author, date, message, MESSAGETYPE);
         this.published = published;
     }
 

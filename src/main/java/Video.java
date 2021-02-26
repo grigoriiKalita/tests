@@ -2,8 +2,8 @@ public class Video extends Media implements Runnable {
 
     private Integer numberOfViews;
 
-    Video(Data author, Data date, Data message, Data messageType, String mediaType, Integer numberOfViews) {
-        super(author, date, message, messageType, mediaType);
+    Video(String author, String date, String message, Data MESSAGETYPE, String mediaType, Integer numberOfViews) {
+        super(author, date, message, MESSAGETYPE, mediaType);
         this.numberOfViews = numberOfViews;
     }
 
@@ -15,5 +15,10 @@ public class Video extends Media implements Runnable {
     public void showContent() {
         super.showContent();
         System.out.println("Number of views: " + numberOfViews);
+    }
+
+    @Override
+    public void runStuff() {
+        System.out.println("I'm ALIVE");
     }
 }
