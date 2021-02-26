@@ -1,9 +1,12 @@
 public class User {
 
     private String name;
-    private String age;
+    private int age;
 
-
+    User(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
 
 }

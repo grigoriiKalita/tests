@@ -3,10 +3,9 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-
         // 1 //
 
-        ArrayList<String> array = new ArrayList<String>();
+        List<String> array = new ArrayList<String>();
         array.add("first");
         array.add("first");
         array.add("banana");

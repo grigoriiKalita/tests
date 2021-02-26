@@ -5,8 +5,8 @@ import java.util.Set;
 
 public class Collections {
 
-    ArrayList<String> formNewListWithoutRepetitions(List<String> list1, List<String> list2) {
-        ArrayList<String> resultArray = new ArrayList<String>();
+    List<String> formNewListWithoutRepetitions(List<String> list1, List<String> list2) {
+        List<String> resultArray = new ArrayList<String>();
 
         for (String valueOfList1 : list1) {
             boolean isDuplicate = false;
