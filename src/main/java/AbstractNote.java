@@ -1,4 +1,4 @@
-abstract public class AbstractNote {
+public abstract class AbstractNote {
 
     private final String author;
     private final String date;
